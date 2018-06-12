@@ -9,10 +9,10 @@
 |                 |  Sunfinder.py     |                            [ ]
 |                 |___________________|                            [ ]               
 |   _____________        _____________            __________       [ ]
-|  |             |  1   |   KYE       |    2     |     KYD  |      [ ]
+|  |             |  1   |   KYE       |    2     |   KYD    |      [ ]
 |  | Solar Panel | ---> | Data Logger | ------>  |Full Node |      [ ]
-|  |             |      |             |          |   IOT    |-->   [ ] (Latest Block) This standard code (ELCCpv1), in each Tx, there is 
-|  |             |      |             |          |          |      [ ] a 523 character space that we write to. We created a standard so  |  |             |      |             |          |          |      [ ] it's easy to scrape.
+|  |             |      |             |          |  IOT     |-->   [ ] (Latest Block) This standard code (ELCCpv1), in each Tx, there is 
+|  |             |      |             |          | MYSQL    |      [ ] a 523 character space that we write to. We created a standard so  |  |             |      |             |          |          |      [ ] it's easy to scrape.
 |  |_____________|      |_____________|          |__________|
 
 ```
@@ -23,7 +23,9 @@ There is an optional dependency of datalogger.py if you are using an Enphase sys
 You can fork datalogger.py and make your own version for other inverter/datalogger APIs.
 ELCC/Enphase/datalogger.py
 
-In the case of solcrypto and mysolar, we have the solcrypto API that logs **voltage, current, energy (kWh) and time of log** directly from the Wattmon device itself. This code would be installed on your own IOT server that is connected on the same managed switch between the Wattmon datalogger and the MYSQL database.
+In the case of solcrypto and mysolar, we have the solcrypto API that logs **voltage, current, energy (kWh) and time of log** directly from the Wattmon device itself. This code would be installed on your own IOT server that is connected on the same managed switch between the Wattmon datalogger and the MYSQL database our your own specific IOT.
+
+An introduction to the concepts of KYE (Know-Your-Energy) and KYD (Know-Your-Device) can be found here: http://solarcoin.wiki/key-terms-and-definitions/
 
 **Introduction**
 
