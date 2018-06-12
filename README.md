@@ -10,14 +10,14 @@ In the case of solcrypto and mysolar, we have the solcrypto API that logs voltag
 
 **Introduction**
 
-This is to define the ELCC text space standard for ElectriCChain/ blockchain IoT standard that is **portable across blockchains**. For more information please see ElectriCChain.org project no.3 or some of the work we are doing at chainofthings/solcrypto.
+This is to define the ELCC text space standard for ElectriCChain/ blockchain IoT standard that is **portable across blockchains**. For more information please see ElectriCChain.org project no.3 or some of the work we are doing at solcrypto.
 
 We want to certify components into the blockchain TX message space. This means that if the component is in operation and confirmed in the field by a human, it can be added also by a human input. Otherwise this standard is designed to be working on IoT/Inverters, data-loggers as a python script that requests human input interactions at setup.
 
 Additionally, if we just want to certify the existance of a solar industry product, we can do that as well. 
 Also, if we want to link a certain GPS anchored system into the SolarCoin blockchain, we can do that too. We can see where it is and it links to off chain web layer web links. For privacy, if you want to certifiy your solar system you can limit the GPS decimal length to three characters.
 
-API's can be written to specifically search and scrape this Tx data. For example with Node-red calling JSON requests.
+API's can be written to specifically search and scrape this Tx data. For example with Node-red calling JSON requests or python scrapers.
 
 This is also designed to work with the SolarCoin granting Engine. This will need to link with the existance of the module and components in the SolarCoin blockchain. And then it can assign a unique GUID, use the SolarCoin blockchain (or **any other blockchain** as a immutable ledger for other programs to search this ledger and grant rewards, or mine information about weather, climates, power generation etc.)
 
@@ -26,7 +26,7 @@ This is also designed to work with the SolarCoin granting Engine. This will need
 These files are curently in Python 2.7 and should work natively on Raspberry Pi 2/3 with Raspian-lite/ ROKOS.
 ROKOS is a Jessie 8 variant for Linux specifically running and designed for IoT/ RPI3b etc.
 
-ElectriCChain certification syntax for SLR Blockchain Tx messaging field which is limited to 516 characters.
+ElectriCChain certification syntax for SLR Blockchain Tx messaging field which is limited to 523 characters.
 
 Example in SLR chain: https://chainz.cryptoid.info/slr/tx.dws?3329045.htm
 
@@ -38,7 +38,7 @@ The genv1 instance is for ongoing generation.
 **"""Example: genv1{"UID":"14dac6fffd768ee96250acd8bd0ff55eae03eae5","t0":"2017-10-09 15:00:30","MWh0":11.490584,"t1":"2017-10-09 15:15:34","MWh1":11.490653,"t2":"2017-10-09 15:31:07","MWh2":11.490673,"t3":"2017-10-09 15:45:40","MWh3":11.490693,"t4":"2017-10-09 16:00:14","MWh4":11.49071,"t5":"2017-10-09 16:15:48","MWh5":11.490718,"t6":"2017-10-09 16:30:50","MWh6":11.490725,"t7":"2017-10-09 16:45:23","MWh7":11.490731}Sig:IGLDDNxi/GEljzT1xyf6+6Y8kuQAwEcllWZkaUBeNfWSgaM8E7OYs4uZBXbDsJysCQY98Ik1fSSpexPpKAwaLTI="""**
 
 **List of additions**
-Updated 2018/06/12- We forked this from the public repo, and we are adding in the connections between the Solcrypto API. (Which connects the Wattmon to the IOT that stores the MYSQL database.
+Updated 2018/06/12- We forked this from the public repo, and we are adding in the connections between the Solcrypto API. (Which connects the Wattmon to the IOT that stores the MYSQL database.)
 
 Updated 2018/02/21- We are merging this to work with our own Modbus output datalogging of the Ct sensor developed by Solcrypto. It isn't an open repository because the connection to the open standard from the Solcrypto API is protected intellectual property.
 That said, the open standard is all operational and open source. Just your own propietary connections to it via your preferred inverter, datalogger or Maximum Powerpoint tracker (MPPT) are your own code(s).
