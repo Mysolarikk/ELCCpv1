@@ -6,7 +6,7 @@ There is an optional dependency of datalogger.py if you are using an Enphase sys
 You can fork datalogger.py and make your own version for other inverter/datalogger APIs.
 ELCC/Enphase/datalogger.py
 
-In the case of solcrypto and mysolar, we have the solcrypto API that logs voltage, current, energy (kWh) and time directly from the Wattmon device itself. This code would be installed on your own IOT server that is connected on the same managed switch between the Wattmon datalogger and the MYSQL database.
+In the case of solcrypto and mysolar, we have the solcrypto API that logs **voltage, current, energy (kWh) and time of log** directly from the Wattmon device itself. This code would be installed on your own IOT server that is connected on the same managed switch between the Wattmon datalogger and the MYSQL database.
 
 **Introduction**
 
