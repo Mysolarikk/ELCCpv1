@@ -2,17 +2,18 @@
 
 #### Overview
 ```
-                   ___________________  SolarCoin Blockchain
-        4         |                   |    3    [ ]
-+---------------- | SolarCoin Scraper | <------ [ ]
-|                 |  @Scalextrix      |         [ ]
-|                 |  Sunfinder.py     |         [ ]
-|                 |___________________|         [ ]               
-|   _____________        _____________          [ ]
-|  |             |  1   |             |    2    [ ]
-|  | Solar Panel | ---> | Data Logger | ------> [ ] (Latest Block) This standard code (ELCCpv1), in each Tx, there is a 523 Character
-|  |             |      |             |                            space that we write to. We created a standard so it's easy to scrape.
-|  |_____________|      |_____________|
+                   ___________________                            SolarCoin Blockchain
+        4         |                   |    3                       [ ]
++---------------- | SolarCoin Scraper | <--------------------------[ ]
+|                 |  @Scalextrix      |                            [ ]
+|                 |  Sunfinder.py     |                            [ ]
+|                 |___________________|                            [ ]               
+|   _____________        _____________            __________       [ ]
+|  |             |  1   |   KYE       |    2     |     KYD  |      [ ]
+|  | Solar Panel | ---> | Data Logger | ------>  |Full Node |      [ ]
+|  |             |      |             |          |   IOT    |-->   [ ] (Latest Block) This standard code (ELCCpv1), in each Tx, there is 
+|  |             |      |             |          |          |      [ ] a 523 character space that we write to. We created a standard so  |  |             |      |             |          |          |      [ ] it's easy to scrape.
+|  |_____________|      |_____________|          |__________|
 
 ```
 
