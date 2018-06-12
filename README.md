@@ -1,5 +1,21 @@
 **OPEN standard for the Tx Message Space for IoT/blockchain interaction** 
 
+#### Overview
+```
+                   ___________________  SolarCoin Blockchain
+        4         |                   |    3    [ ]
++---------------- | SolarCoin Scraper | <------ [ ]
+|                 |  @Scalextrix      |         [ ]
+|                 |  Sunfinder.py     |         [ ]
+|                 |___________________|         [ ]               
+|   _____________        _____________          [ ]
+|  |             |  1   |             |    2    [ ]
+|  | Solar Panel | ---> | Data Logger | ------> [ ] (Latest Block) This standard code (ELCCpv1), in each Tx, there is a 523 Character
+|  |             |      |             |                            space that we write to. We created a standard so it's easy to scrape.
+|  |_____________|      |_____________|
+
+```
+
 **Dependencies**
 
 There is an optional dependency of datalogger.py if you are using an Enphase system.
