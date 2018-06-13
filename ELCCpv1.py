@@ -29,7 +29,7 @@ sysv1{
   """For on-chain privacy, your can leave it to less decimals places for Lat/Long"""
   "long":"000.000E/W",
   """For on-chain privacy, your can leave it to less decimals places for Lat/Long"""
-  "Comment":"anything up to 40 characters, The type of IoT running this py script e.g. RPi3b, RPi2, OdroidXU4 etc.",
+  "Comment":"anything up to 40 characters, The type of IoT running this py script e.g. RPi3b, RPi3b+, RPi2, OdroidXU4 etc.",
    }
    "Sig": "digital signature based on SigAddr, and using the concatenation of sysv1 message {.....} + SHA1 checksum of the datalogger.py program"
 """
